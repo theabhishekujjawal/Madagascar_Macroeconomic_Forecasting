@@ -1,0 +1,32 @@
+================================================================================
+DATA SUMMARY - MADAGASCAR ECONOMIC ANALYSIS
+================================================================================
+
+Dataset: Madagascar World Bank Data
+Time Period: 1995-2023
+Variables: GDP, Exports, Imports (current US$)
+Number of Observations: 29
+
+Data Description:
+----------------------------------------
+GDP: Gross Domestic Product in current US dollars
+Exports: Exports of goods and services in current US dollars
+Imports: Imports of goods and services in current US dollars
+
+First 5 observations (billion USD):
+        GDP  Exports  Imports
+Year                         
+1995  3.838    0.805    0.936
+1996  4.932    0.840    0.930
+1997  4.263    0.688    0.884
+1998  4.402    0.722    0.921
+1999  4.278    0.785    0.966
+
+Last 5 observations (billion USD):
+         GDP  Exports  Imports
+Year                          
+2019  14.105    4.009    4.821
+2020  13.051    2.629    3.768
+2021  14.355    3.315    4.611
+2022  15.326    4.681    6.131
+2023  15.870    4.285    5.416

@@ -1,0 +1,4 @@
+Variable,ADF Statistic,ADF p-value,ADF Decision,KPSS Statistic,KPSS p-value,KPSS Decision
+Δlog(GDP),-6.66970225237181,4.621072423365667e-09,Stationary,0.0897023010051983,0.1,Stationary
+Δlog(Exports),-5.562458053539405,1.5308571141478582e-06,Stationary,0.07224133962401706,0.1,Stationary
+Δlog(Imports),-1.8616767183182013,0.3502986689661913,Non-stationary,0.126630735488133,0.1,Stationary
