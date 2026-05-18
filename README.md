@@ -1,46 +1,74 @@
 # Madagascar Macroeconomic Forecasting
 
-## 📌 Project Overview
-This repository contains a comprehensive econometric analysis and macroeconomic forecasting model for Madagascar. Using historical World Bank data, this project applies advanced time-series modeling techniques to understand the key drivers of Madagascar's economy and forecast the Gross Domestic Product (GDP).
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Domain](https://img.shields.io/badge/Domain-Econometrics-green)
+![Models](https://img.shields.io/badge/Models-OLS%20%7C%20ARIMA%20%7C%20VAR-orange)
+![Data](https://img.shields.io/badge/Data-World%20Bank-purple)
 
-## 🚀 Key Features and Methodologies
-- **Exploratory Data Analysis & Descriptive Statistics**: Detailed summary and correlation checks of macroeconomic variables.
-- **Stationarity & Cointegration Tests**: Applications of Augmented Dickey-Fuller (ADF) tests and Johansen Cointegration checks to ensure data validity.
-- **Time-Series Models**:
-  - **OLS (Ordinary Least Squares)** Regression with robust standard errors.
-  - **ARIMA (AutoRegressive Integrated Moving Average)** for univariate forecasting.
-  - **ARIMAX** for multivariate forecasting with exogenous variables.
-  - **VAR (Vector Autoregression)** modeling for dynamic system analysis.
-- **Advanced Diagnostics**:
-  - Variance Inflation Factor (VIF) for multicollinearity.
-  - Ljung-Box tests for ARIMA residuals.
-- **Shock Analysis**: 
-  - **Impulse Response Functions (IRF)**: Visualizing dynamic shock propagation across the economy.
-  - **Forecast Error Variance Decomposition (FEVD)**: Quantifying the drivers of forecast errors over time.
-
-## 📂 Repository Structure
-- `Madagascar_Macroeconomic_Forecasting_Advanced.ipynb` - The primary Jupyter Notebook containing the full end-to-end econometric pipeline, training, and analysis.
-- `madagascar_worldbank_data.csv` - The raw World Bank dataset used for the analysis.
-- `*.csv` files - Generated output tables containing coefficients, model statistics, selection criteria, stationary tests, and diagnostics.
-
-## 📊 Results Summary
-The analysis evaluates multiple models based on $R^2$, RMSE, AIC, and BIC to determine the most robust forecasting approach for Madagascar's GDP. (Detailed coefficients and diagnostic checks can be found in the respective CSV output files).
-
-## 🛠️ Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/theabhishekujjawal/Madagascar_Macroeconomic_Forecasting.git
-   ```
-2. Open the main notebook:
-   ```bash
-   jupyter notebook Madagascar_Macroeconomic_Forecasting_Advanced.ipynb
-   ```
-3. Run the cells sequentially to reproduce the data processing, model training, and shock analysis steps.
-
-## 📝 Requirements
-- Python 3.8+
-- Jupyter Notebook
-- `pandas`, `numpy`, `statsmodels`, `matplotlib`, `seaborn`
+> Econometric analysis and GDP forecasting for Madagascar using OLS, ARIMA, ARIMAX, and VAR models with impulse response and variance decomposition analysis.
 
 ---
-*Created by [theabhishekujjawal](https://github.com/theabhishekujjawal).*
+
+## Project Overview
+
+This repository contains a comprehensive econometric analysis and macroeconomic forecasting framework for Madagascar. Using historical World Bank data, the project applies multiple time-series modelling techniques to identify the key drivers of Madagascar's economy and forecast Gross Domestic Product (GDP).
+
+## Methodology
+
+### Stationarity & Cointegration
+- Augmented Dickey-Fuller (ADF) tests for unit root detection
+- Johansen Cointegration tests for long-run equilibrium relationships
+
+### Models Implemented
+
+| Model | Type | Description |
+|-------|------|-------------|
+| **OLS** | Cross-sectional | Multivariate regression with robust standard errors |
+| **ARIMA** | Univariate | AutoRegressive Integrated Moving Average |
+| **ARIMAX** | Multivariate | ARIMA with exogenous macroeconomic regressors |
+| **VAR** | System | Vector Autoregression for dynamic multi-variable analysis |
+
+### Diagnostics
+- Variance Inflation Factor (VIF) for multicollinearity detection
+- Ljung-Box tests for residual autocorrelation
+- Model selection via AIC, BIC, R², and RMSE
+
+### Shock Analysis
+- **Impulse Response Functions (IRF)**: Dynamic propagation of macroeconomic shocks
+- **Forecast Error Variance Decomposition (FEVD)**: Contribution of each variable to forecast uncertainty over time
+
+## Repository Structure
+
+```
+├── Madagascar_Macroeconomic_Forecasting_Advanced.ipynb   # Full econometric pipeline
+├── madagascar_worldbank_data.csv                         # Raw World Bank dataset
+├── *.csv                                                 # Generated output tables
+└── README.md
+```
+
+## How to Run
+
+```bash
+git clone https://github.com/theabhishekujjawal/Madagascar_Macroeconomic_Forecasting.git
+cd Madagascar_Macroeconomic_Forecasting
+pip install pandas numpy statsmodels matplotlib seaborn
+jupyter notebook Madagascar_Macroeconomic_Forecasting_Advanced.ipynb
+```
+
+Run cells sequentially to reproduce the data processing, model training, and shock analysis.
+
+## Requirements
+
+- Python 3.8+
+- pandas, numpy, statsmodels, matplotlib, seaborn
+- Jupyter Notebook
+
+## Academic Context
+
+Completed as part of the MSc Quantitative Finance programme at UCD Michael Smurfit Graduate Business School (2025–2026).
+
+## Author
+
+**Abhishek Ujjawal** — MSc Quantitative Finance, UCD Michael Smurfit Graduate Business School
+
+[LinkedIn](https://linkedin.com/in/theabhishekujjawal) · [GitHub](https://github.com/theabhishekujjawal) · [Portfolio](https://theabhishekujjawal.github.io/Bio)
